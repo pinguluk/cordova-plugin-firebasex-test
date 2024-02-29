@@ -10,25 +10,11 @@
     "cordova-plugin-androidx-adapter": "^1.1.1",
     "cordova-plugin-dialogs": "git+https://github.com/dpa99c/cordova-plugin-dialogs.git",
     "cordova-plugin-enable-multidex": "^0.2.0",
-    "cordova-plugin-firebasex": "*",
-    "cordova-plugin-hello-c": "^1.1.1"
+    "cordova-plugin-hello-c": "^1.1.1",
+    "cordova-plugin-firebasex": "github:pinguluk/cordova-plugin-firebasex#develop"
   },
   "cordova": {
     "plugins": {
-      "cordova-plugin-firebasex": {
-        "ANDROID_ICON_ACCENT": "#FF11FF11",
-        "ANDROID_FIREBASE_PERFORMANCE_MONITORING": "false",
-        "IOS_STRIP_DEBUG": "true",
-        "FIREBASE_ANALYTICS_COLLECTION_ENABLED": "false",
-        "FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "false",
-        "FIREBASE_CRASHLYTICS_COLLECTION_ENABLED": "false",
-        "FIREBASE_FCM_AUTOINIT_ENABLED": "false",
-        "FIREBASE_ANALYTICS_WITHOUT_ADS": "false",
-        "SETUP_RECAPTCHA_VERIFICATION": "true",
-        "IOS_ENABLE_APPLE_SIGNIN": "true",
-        "IOS_USE_PRECOMPILED_FIRESTORE_POD": "false",
-        "IOS_ON_DEVICE_CONVERSION_ANALYTICS": "true"
-      },
       "cordova-custom-config": {},
       "cordova-plugin-dialogs": {},
       "cordova-plugin-enable-multidex": {},
@@ -49,6 +35,13 @@
         "FACEBOOK_ANDROID_SDK_VERSION": "11.3.0",
         "FACEBOOK_IOS_SDK_VERSION": "11.1.0",
         "FACEBOOK_BROWSER_SDK_VERSION": "v11.0"
+      },
+      "cordova-plugin-firebasex": {
+        "IOS_STRIP_DEBUG": "true",
+        "FIREBASE_ANALYTICS_COLLECTION_ENABLED": "false",
+        "FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "false",
+        "FIREBASE_CRASHLYTICS_COLLECTION_ENABLED": "false",
+        "SETUP_RECAPTCHA_VERIFICATION": "true"
       }
     },
     "platforms": [
