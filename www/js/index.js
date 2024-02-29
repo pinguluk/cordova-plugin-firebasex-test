@@ -550,6 +550,22 @@ function isAnalyticsCollectionEnabled(showUser){
     });
 }
 
+function setAnalyticsConsentMode(consent){
+    FirebasePlugin.setAnalyticsConsentMode(consent,function(){
+        log("Set analytics consent mode: " + consent, true);
+    },function(error){
+        logError("Failed to set analytics consent mode: " + consent, error, true);
+    });
+}
+
+function setDefaults(){
+    FirebasePlugin.setDefaults(defaults,function(){
+        log("Set remote config defaults", true);
+    },function(error){
+        logError("Failed to set remote config defaults", error, true);
+    });
+}
+
 function logEvent(){
     FirebasePlugin.logEvent("my_event", {
         string: "bar",
