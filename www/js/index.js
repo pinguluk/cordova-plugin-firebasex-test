@@ -552,9 +552,9 @@ function isAnalyticsCollectionEnabled(showUser){
 
 function setAnalyticsConsentMode(consent){
     FirebasePlugin.setAnalyticsConsentMode(consent,function(){
-        log("Set analytics consent mode: " + consent, true);
+        log("Set analytics consent mode: " + JSON.stringify(consent), true);
     },function(error){
-        logError("Failed to set analytics consent mode: " + consent, error, true);
+        logError("Failed to set analytics consent mode: " + JSON.stringify(consent), error, true);
     });
 }
 
